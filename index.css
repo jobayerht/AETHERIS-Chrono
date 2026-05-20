@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600;700;800&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Italiana", "Didot", serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cinzel", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Artistic Flair Brand Colors */
+  --color-gold-cream: #E0D8D0;
+  --color-gold-brand: #C5A059;
+  --color-gold-soft: #D4B375;
+  --color-dark-bg: #050505;
+  --color-warm-glow: #2A1D12;
+}
+
+/* Custom styles etc */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gold-glow-hover:hover {
+  text-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+}
+
+.glow-btn {
+  position: relative;
+}
+
+.glow-btn::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  background: #C5A059;
+  opacity: 0.15;
+  filter: blur(16px);
+  border-radius: 9999px;
+  transition: opacity 0.3s ease;
+}
+
+.glow-btn:hover::before {
+  opacity: 0.35;
+}
