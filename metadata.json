@@ -1,0 +1,6 @@
+{
+  "name": "AETHERIS Chrono: Futuristic Luxury Watches",
+  "description": "An ultra-premium interactive watch showcase featuring hyper-realistic rendering, scroll-triggered cinematic experiences, exploded mechanical views, and an AI Luxury Horology Concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
